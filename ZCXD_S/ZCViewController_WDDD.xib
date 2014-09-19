@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZCViewController_WDDD">
+            <connections>
+                <outlet property="barbutton_jxz" destination="yx9-Rx-7oG" id="sJI-EX-UeJ"/>
+                <outlet property="barbutton_qb" destination="sBj-6V-Prs" id="gdf-Tl-rv5"/>
+                <outlet property="barbutton_ybj" destination="fiq-yc-peX" id="uRS-6d-5uC"/>
+                <outlet property="barbutton_ygb" destination="SbT-mJ-OSW" id="9rz-LE-dmy"/>
+                <outlet property="barbutton_ywc" destination="ZpO-ud-hHT" id="s3h-vr-nZa"/>
+                <outlet property="label" destination="CQV-17-KV4" id="lDp-Lr-rvd"/>
+                <outlet property="toolbar" destination="e2b-1X-94L" id="ICA-kU-nv4"/>
+                <outlet property="tv" destination="MDe-sN-ruS" id="r4H-TM-TZ5"/>
+                <outlet property="view" destination="iN0-l3-epB" id="uR8-6e-p8H"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="MDe-sN-ruS">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="436"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="e2b-1X-94L">
+                    <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem title="全部" width="50" style="plain" id="sBj-6V-Prs"/>
+                        <barButtonItem title="已报价" width="50" style="plain" id="fiq-yc-peX"/>
+                        <barButtonItem title="进行中" width="50" style="plain" id="yx9-Rx-7oG"/>
+                        <barButtonItem title="已完成" width="50" style="plain" id="ZpO-ud-hHT"/>
+                        <barButtonItem title="已关闭" width="50" style="plain" id="SbT-mJ-OSW"/>
+                    </items>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </toolbar>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CQV-17-KV4">
+                    <rect key="frame" x="17" y="436" width="50" height="2"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" red="1" green="0.27258393889999999" blue="0.039454810659999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

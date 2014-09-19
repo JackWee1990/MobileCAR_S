@@ -7,12 +7,16 @@
 //
 
 #import "ZCAppDelegate.h"
-
+#import <MAMapKit/MAMapKit.h>
 @implementation ZCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [MAMapServices sharedServices].apiKey =@"be89b76ce1a71ca2ece2ad619c677878";
+    
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 							
