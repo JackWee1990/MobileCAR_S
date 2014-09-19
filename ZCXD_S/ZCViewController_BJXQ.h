@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "HttpController.h"
 #import "ZCViewController_WDDD.h"
+#import "ZCViewController.h"
 
 @interface ZCViewController_BJXQ : UIViewController
 

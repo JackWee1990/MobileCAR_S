@@ -64,7 +64,7 @@
     [self.view addSubview:self.mapView];
     
     
-    _mapView.showsUserLocation =YES; //设置为可以显示用户位置
+    //_mapView.showsUserLocation =YES; //设置为可以显示用户位置
     //_mapView.compassOrigin = CGPointMake(10, 440);
     _mapView.showsCompass = YES;//显示罗盘
     _mapView.showsScale = YES;
@@ -278,17 +278,21 @@
          2.修改最后一个Annotation的tag
          3.根据tag进行相应操作
          */
-        ZCReGeocodeAnnotation *ra_st = [self.mapView.annotations lastObject];//获取start
+        ZCReGeocodeAnnotation *ra_st = [self.mapView.annotations firstObject];//获取start
         //ra_st.tag = 1;
         MAAnnotationView *av_start = [self.mapView viewForAnnotation:ra_st];
         av_start.image = [UIImage imageNamed:@"icon_st.png"];
         //
-        self.startAdress = ra_st.reGeocode.formattedAddress;
+        
+        self.startAdress = ra_st.reGeocode.formattedAddress;;
+        
+        
         self.startla = [NSString stringWithFormat:@"%f",ra_st.coordinate.latitude ];
         self.startlo = [NSString stringWithFormat:@"%f",ra_st.coordinate.longitude ];
         //
         [self.infoView removeFromSuperview];
         annotationsWillDel = [self.mapView.annotations subarrayWithRange:NSMakeRange(0, self.mapView.annotations.count - 1)];
+        
         [self.mapView removeAnnotations:annotationsWillDel];
     }
     else if (self.infoView_status == 2) {//用户点击"设为终点"
@@ -428,9 +432,11 @@
     NSString *resultString = [[NSString alloc]initWithData:reponseData encoding:NSUTF8StringEncoding];
     NSLog(@"Root_%@",resultString);
     
+    [self.navigationController popToRootViewControllerAnimated:true];
     
+    /*
     ZCViewController_WDDD *vc = [[ZCViewController_WDDD alloc]initWithNibName:@"ZCViewController_WDDD" bundle:nil];
     vc.clt_mail = clt_mail;
-    [self.navigationController pushViewController:vc animated:false];
+    [self.navigationController pushViewController:vc animated:false];*/
 }
 @end

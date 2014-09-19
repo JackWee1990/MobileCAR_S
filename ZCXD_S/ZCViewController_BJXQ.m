@@ -29,6 +29,12 @@
     // Do any additional setup after loading the view from its nib.
     [self getData];
     [self textFieldConfig];
+    UILabel *customLab = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 30)];
+    [customLab setTextColor:[UIColor whiteColor]];
+    [customLab setText:@"报价详情"];
+    customLab.textAlignment = NSTextAlignmentCenter;
+    customLab.font = [UIFont boldSystemFontOfSize:20];
+    self.navigationItem.titleView = customLab;
     
 }
 
@@ -65,20 +71,24 @@
     
     
     NSString *type = @"POST";
-    NSString *url = @"app/offer_confirm/";
+    NSString *url = @"app/clt_confirm/";  //@"app/offer_confirm/";
     NSString *info = [NSString stringWithFormat:@"of_id=%@",self.of_id];
     
     
     resultData = [httpController httpHandleWithType:type url:url info:info];
     
     NSString *responseString = [[NSString alloc] initWithData:resultData encoding:NSUTF8StringEncoding];
-    NSLog(@"ZCViewController_DL_responseString:%@",responseString);
+    NSLog(@"ZCViewController_BJXQ_responseString:%@",responseString);
     
-    ZCViewController_WDDD *vc = [[ZCViewController_WDDD alloc]initWithNibName:@"ZCViewController_WDDD" bundle:nil];
     
-    vc.clt_mail = [[NSUserDefaults standardUserDefaults]objectForKey:@"clt_mail"];
     
-    [self.navigationController pushViewController:vc animated:true];
+    //[self.navigationController popViewControllerAnimated:true];
+    [self.navigationController popToRootViewControllerAnimated:true];
+    //ZCViewController_WDDD *vc = [[ZCViewController_WDDD alloc]initWithNibName:@"ZCViewController_WDDD" bundle:nil];
+    
+    //vc.clt_mail = [[NSUserDefaults standardUserDefaults]objectForKey:@"clt_mail"];
+    
+    //[self.navigationController pushViewController:vc animated:true];
     //NSDictionary *resultDic = [NSJSONSerialization JSONObjectWithData:resultData options:NSJSONReadingMutableContainers error:nil];
 }
 
