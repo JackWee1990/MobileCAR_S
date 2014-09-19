@@ -489,6 +489,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = JackWee;
 				TargetAttributes = {
+					049055D819BEA3F900547057 = {
+						DevelopmentTeam = LQ4QU2U33Q;
+					};
 					049055F919BEA3FA00547057 = {
 						TestTargetID = 049055D819BEA3F900547057;
 					};
@@ -736,6 +739,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/mac/Desktop/AMap_iOS_API_V2/AMap_iOS_API_Lib_V2.2.1/3D,
@@ -746,6 +751,7 @@
 				INFOPLIST_FILE = "ZCXD_S/ZCXD_S-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -755,6 +761,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/mac/Desktop/AMap_iOS_API_V2/AMap_iOS_API_Lib_V2.2.1/3D,
@@ -765,6 +773,7 @@
 				INFOPLIST_FILE = "ZCXD_S/ZCXD_S-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

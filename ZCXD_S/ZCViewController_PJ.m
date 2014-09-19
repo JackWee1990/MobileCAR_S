@@ -57,10 +57,7 @@
 }
 
 - (IBAction)button_pj_Click:(id)sender {
-    NSUserDefaults *userDefaults = [[NSUserDefaults standardUserDefaults]init];
-    NSString *status_login = @"YES";
-    [userDefaults setObject:status_login forKey:@"isLogin"];
-    [self.navigationController popToRootViewControllerAnimated:true];
+    [self.navigationController popViewControllerAnimated:true];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{

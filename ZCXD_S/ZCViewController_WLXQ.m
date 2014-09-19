@@ -132,7 +132,7 @@
     
     NSString *type = @"GET";
     
-    NSString *url = [NSString stringWithFormat:@"http://www.congyuandong.cn:8080/t/app/clt_location_detail/?or_id=%@",self.or_id];
+    NSString *url = [NSString stringWithFormat:@"app/clt_location_detail/?or_id=%@",self.or_id];
     
     NSString *info = @"nil";
     
