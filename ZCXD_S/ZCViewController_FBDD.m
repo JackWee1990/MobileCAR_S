@@ -77,7 +77,7 @@
 
 - (IBAction)button_selectSource_Click:(id)sender {
     //[self test];
-    /*
+    
     if (
         (![self.textField_thsj.text isEqual:@""])&&
         (![self.textField_ddsj.text isEqual:@""])&&
@@ -129,8 +129,8 @@
     }
     else{
         NSLog(@"FBDD_something is Empty");
-    }*/
-    
+    }
+    /*
     ZCViewController_Root *vc = [[ZCViewController_Root alloc]init];
     
     vc.time_thsj = self.textField_thsj.text;
@@ -159,7 +159,7 @@
     
     
     [self.navigationController pushViewController:vc animated:true];
-    
+    */
     
     
 }
